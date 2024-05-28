@@ -1,16 +1,13 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?business=N2GLXLS5KBFBY&item_name=Chris+Redford&currency_code=USD)
-
-# Bear Workflow
+# Bear Alfred Workflow for MacBook(Apple Silicon)
 
 Streamlined note searching and creation for [Bear](http://www.bear-writer.com/) using [Alfred](https://www.alfredapp.com/workflows/).
 
+The Workflow has forked from [drgrib's alfred-bear](https://github.com/drgrib/alfred-bear) and I have compiled it with Go.
+
 ## Install
 
-1. [Download](https://github.com/drgrib/alfred-bear/releases/download/v1.2.4/Bear.alfredworkflow) the latest release and double-click _Bear.alfredworkflow_. Alfred will open the workflow and install it.
+1. [Download](https://github.com/natsustan/alfred-bear-for-apple-silicon/releases/download/v1.2.4/bear.alfredworkflow) the latest release and double-click _Bear.alfredworkflow_. Alfred will open the workflow and install it.
 2. [Authorize all the executables used by the workflow](#authorize-all-executables).
-3. If you are on an Apple Silicon Mac (M1, M2, etc.), [install Rosetta](https://github.com/drgrib/alfred-bear#install-rosetta)
-
-If you are using an old version of Bear before 2.0 use [this](https://github.com/drgrib/alfred-bear/releases/download/1.1.9/Bear.alfredworkflow) download link for the latest version supporting it.
 
 ## Search
 
@@ -138,13 +135,3 @@ xattr -rd com.apple.quarantine cmd
 ```
 
 This should authorize all the Alfred Bear the executables and fix the security errors.
-
-## Install Rosetta
-
-If your mac is based on an Apple Silicon chip (M1, M2, etc.), you need to have Rosetta installed on your system, otherwise Alfred workflows will fail silently.
-
-Copy this command and execute in terminal to install Rosetta:
-
-```sh
-softwareupdate --install-rosetta
-```
